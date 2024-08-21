@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <link rel="stylesheet" href="./style.css">
     <!-- Google Fonts -->
 
 
@@ -22,19 +23,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- java Script custom color -->
-
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+  
      
     <!-- font family -->
     <style>
@@ -96,9 +85,82 @@
 
     </header>
 
-    <main>
+    <main class="max-w-6xl mx-auto mt-12">
 
         <!-- Bannar section -->
+
+        <section>
+
+         
+            <div class=" mx-auto max-w-5xl w-full bg-white rounded-xl shadow-lg p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Left Side (Text and Buttons) -->
+                <div class="flex flex-col justify-center space-y-4">
+                    <!-- Header with Icon -->
+                    <div class="flex items-center space-x-2">
+                        <img src="images/food1.jpeg" alt="Bike Delivery" class="w-8 h-8">
+                        <span class="text-orange-500 font-semibold">Bike Delivery</span>
+                    </div>
+        
+                    
+                    <h1 class="text-4xl font-bold">
+                        <span class="text-black">THE FASTEST</span><br>
+                        <span class="text-orange-500">DELIVERY</span><br>
+                        <span class="text-black">IN YOUR CITY</span>
+                    </h1>
+        
+                    
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo, massa sed proin amet a vestibulum enim volutpat lacus.</p>
+        
+                    <!-- Buttons -->
+                    <div class="flex space-x-4">
+                        <button class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-orange-600">Order Now</button>
+                        <button class="flex items-center space-x-2 text-black px-6 py-3 rounded-lg border-2 border-gray-200 hover:border-gray-400">
+                            <span class="play-icon">&#9658;</span>
+                            <span>Order Process</span>
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Right Side (Food Cards) -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden text-center p-4">
+                        <img src="images/food2.jpeg" alt="Burger" class="w-full h-24 object-cover rounded-md">
+                        <h2 class="text-lg font-semibold mt-2">Burger</h2>
+                        <p class="text-gray-600 text-sm">Mushroom Sauce</p>
+                        <p class="text-red-500 text-lg font-bold mt-1">$5.15</p>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden text-center p-4">
+                        <img src="images/food1.jpeg" alt="Food Combo" class="w-full h-24 object-cover rounded-md">
+                        <h2 class="text-lg font-semibold mt-2">Food Combo</h2>
+                        <p class="text-gray-600 text-sm">Mushroom Sauce</p>
+                        <p class="text-red-500 text-lg font-bold mt-1">$9.15</p>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden text-center p-4">
+                        <img src="images/food4.jpeg" alt="Pizza" class="w-full h-24 object-cover rounded-md">
+                        <h2 class="text-lg font-semibold mt-2">Pizza</h2>
+                        <p class="text-gray-600 text-sm">Mushroom Sauce</p>
+                        <p class="text-red-500 text-lg font-bold mt-1">$6.15</p>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden text-center p-4">
+                        <img src="images/food5.jpeg" alt="Cake" class="w-full h-24 object-cover rounded-md">
+                        <h2 class="text-lg font-semibold mt-2">Cake</h2>
+                        <p class="text-gray-600 text-sm">Mushroom Sauce</p>
+                        <p class="text-red-500 text-lg font-bold mt-1">$5.15</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- section card -->
+
+        <div id="most-popular-items" class="product-section">
+          <h2>Most Popular Items</h2>
+          <div class="product-grid">
+              <!-- Product cards will be inserted here by JavaScript -->
+          </div>
+          <button class="see-more-btn">See More Products</button>
+      </div>
+      
+      <script src="script.js"></script>
 
     </main>
     <footer>
