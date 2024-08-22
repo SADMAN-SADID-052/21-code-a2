@@ -46,14 +46,16 @@
                   <a class="btn btn-ghost text-xl text-orange-500"><img class="h-14 w-20" src="./images/logo.jpg" alt="">Food</a>
                 </div>
 
-                <ul class="mr-10 flex gap-5 cursor-pointer font-bold">
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        cart
-                    </li>
-                </ul>
+                    <ul class="mr-10 flex gap-5 cursor-pointer font-bold">
+                        <li>
+                            Home
+                        </li>
+                        <li>
+                            Cart
+                        </li>
+                    </ul>
+
+               
                 <div class="flex-none gap-2">
                   <div class="form-control">
                     <input type="text"  placeholder="Search" class="input input-bordered w-24 md:w-auto" />
@@ -197,7 +199,8 @@
         <section>
 
             <div id="most-popular-items" class="product-section">
-                <h2>Most Popular Items</h2>
+                <p class="text-orange-500">Product</p>
+                <h2 class="text-5xl font-bold mb-20">Most Popular Items</h2>
                 <div class="product-grid">
                     <!-- Product cards will be inserted here by JavaScript -->
                 </div>
@@ -263,47 +266,40 @@
 
       <section class="mx-auto">
 
-        <div class="container mx-auto py-16">
-          <div class="text-center mb-10">
-              <h2 class="text-orange-500 font-semibold text-lg">Testimonials</h2>
-              <h3 class="text-3xl font-bold text-gray-800">Our Happy Client Says</h3>
-          </div>
-      
-          <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-between space-y-8 lg:space-y-0">
-              
-              <div class="bg-white p-8 rounded-lg shadow-lg relative lg:w-2/5 text-center lg:text-left">
-                  
-                  <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white p-2 rounded-full focus:outline-none">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                      </svg>
-                  </button>
-      
-                  
-                  <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white p-2 rounded-full focus:outline-none">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
-                  </button>
-      
-                  <div class="flex  flex-col items-center lg:flex-row">
-                    
-                      <img src="./images/pp.jpeg" alt="Profile Picture" class="rounded-full w-16 h-16 lg:mr-6 mb-4 lg:mb-0">
-                      <div>
-                          <h4 class="text-xl font-semibold text-gray-800">Willians Jhone</h4>
-                          <p class="text-gray-600 mb-4">CEO & Co-Founder</p>
-                          <p class="text-gray-700">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                          Amet nisl tincidunt adipiscing dictumst blandit hac. Lectus cras velit sed dignissim ac, aliquet."</p>
-                      </div>
+        <div class="text-center mb-10">
+            <p class="text-orange-500">Testimonials</p>
+            <h1 class="text-4xl font-bold">Our Happy Client Says</h1>
+        </div>
+
+        <div class="flex flex-col mb-10  lg:flex-row items-center justify-center lg:space-x-6">
+            <!-- Carousel Section -->
+            <div class="w-1/2">
+              <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center">
+                    <img src="./images/pp.jpeg" alt="Profile Picture" class="w-16 h-16 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold">Willians Jhone</h3>
+                    <p class="text-gray-500">CEO & Co-Founder</p>
+                    <p class="mt-4 text-gray-600">
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet nisl tincidunt adipiscing dictumst blandit hac. 
+                      Lectus cras velit sed dignissim ac, aliquet. Metus egestas habitant feugiat neque ultrices nunc, dolor egestas mus.”
+                    </p>
                   </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 top-1/2 left-4 right-4">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <!-- Additional slides can go here -->
               </div>
-      
-              
-              <div class="flex">
-                  <img  src="./images/food5.jpeg" alt="Food Image" class="rounded-lg shadow-lg">
-              </div>
+            </div>
+          
+            <!-- Image Section -->
+            <div class="w-1/2">
+              <img   src="./images/food5.jpeg" alt="Food Image" class="rounded-lg shadow-md w-3/4">
+            </div>
           </div>
-      </div>
+          
 
 
       </section>
