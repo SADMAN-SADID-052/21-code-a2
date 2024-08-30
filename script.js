@@ -1,14 +1,14 @@
 const products = [
-    { name: "Gyro Sandwich", rating: 4.0, price: 15.00, imgSrc: "./images/food1.jpeg" },
-    { name: "Enchilade", rating: 5.0, price: 25.50, imgSrc: "./images/food1.jpeg" },
-    { name: "Green Beans", rating: 4.9, price: 12.00, imgSrc: "./images/food1.jpeg" },
-    { name: "Pizza", rating: 4.8, price: 18.50, imgSrc: "./images/food1.jpeg" },
-    { name: "Chicken Pot Pie", rating: 4.9, price: 25.00, imgSrc: "./images/food1.jpeg" },
-    { name: "Green Salad", rating: 4.8, price: 15.00, imgSrc: "./images/food1.jpeg" },
+    { name: "Gyro Sandwich", rating: 4.0, price: 15.00, imgSrc: "./images/card-4.jpeg" },
+    { name: "Enchilade", rating: 5.0, price: 25.50, imgSrc: "./images/card-5.jpeg" },
+    { name: "Green Beans", rating: 4.9, price: 12.00, imgSrc: "./images/card-6.jpeg" },
+    { name: "Pizza", rating: 4.8, price: 18.50, imgSrc: "./images/card-4.jpeg" },
+    { name: "Chicken Pot Pie", rating: 4.9, price: 25.00, imgSrc: "./images/card-5.jpeg" },
+    { name: "Green Salad", rating: 4.8, price: 15.00, imgSrc: "./images/card-6.jpeg" },
     { name: "Tacos", rating: 4.7, price: 13.00, imgSrc: "./images/food1.jpeg" },
     { name: "Burrito", rating: 4.8, price: 14.50, imgSrc: "./images/food1.jpeg" },
     { name: "Spaghetti", rating: 4.9, price: 20.00, imgSrc: "./images/food1.jpeg" },
-    // More products can be added here
+    
 ];
 
 let currentProductIndex = 0;
@@ -43,5 +43,5 @@ function loadProducts() {
 
 seeMoreBtn.addEventListener('click', loadProducts);
 
-// Initial load of products
+
 loadProducts();
