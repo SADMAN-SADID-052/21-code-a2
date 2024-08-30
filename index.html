@@ -38,56 +38,56 @@
 </head>
 <body>
 
-    <header class="max-w-6xl mx-auto">
-         <nav class="mt-16">
+  <header class="max-w-6xl mx-auto bg-[#F4F4F4] mt-12">
+    <nav>
 
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                  <a class="btn btn-ghost text-xl text-orange-500"><img class="h-14 w-20" src="./images/logo.jpg" alt="">Food</a>
-                </div>
-
-                    <ul class="mr-10 flex gap-5 cursor-pointer font-bold">
-                        <li>
-                            Home
-                        </li>
-                        <li>
-                            Cart
-                        </li>
-                    </ul>
-
-               
-                <div class="flex-none gap-2">
-                  <div class="form-control">
-                    <input type="text"  placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                  </div>
-                  <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                      <div class="w-10 rounded-full">
-                        <i  class="fa-solid fa-cart-shopping text-2xl"></i> 
-                      </div>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li>
-                        <a class="justify-between">
-                          Profile
-                          <span class="badge">New</span>
-                        </a>
-                      </li>
-                      <li><a>Settings</a></li>
-                      <li><a>Logout</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-           
-
-        </nav> 
-
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
 
           
-    </header>
+          <a class="btn btn-ghost text-2xl font-bold"> 
+            
+
+            <i class="fa-solid fa-utensils text-3xl text-green-600"></i>
+
+         <span class="text-orange-600">FOOD</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-semibold">Home</a></li>
+            <li><a class="font-semibold">Cart</a></li>
+           
+         
+            </ul>
+        </div>
+
+       
+        <div class="navbar-end md:flex gap-3 hidden">
+
+          <i class="fa-solid fa-cart-shopping text-2xl p-3 border-2 cursor-pointer bg-white rounded-full"></i>
+          <div class="md:hidden lg:flex rounded-full border-1 shadow-lg p-2">
+
+            <i class="fa-solid fa-magnifying-glass text-xl p-2  cursor-pointer"></i>
+           
+          <input class="outline-0" type="text" placeholder="Search" >
+          </div>
+        </div>
+
+        <!-- For responsive -->
+
+        <div class="dropdown ml-14">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        
+            
+          <i class="fa-solid fa-bars ml-14 text-xl bg-white shadow-md p-2 rounded-full text-gray-500"></i>
+          </div>
+        
+        </div>
+        
+</div>
+
+</nav>
+</header>
 
     <main class="max-w-6xl mx-auto mt-12">
 
